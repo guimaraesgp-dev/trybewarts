@@ -12,9 +12,9 @@
         <img class="trybewarts-header-logo" src="./images/trybewarts-header-logo.svg">
         <h1 id="trybewarts-header-title">Trybewarts</h1>
         <form class="trybewarts-login" >
-            <input type="email" name="email" type="text" placeholder="Email" autocomplete="off" required autofocus>
-            <input type="senha" name="password"  type="text" placeholder="Senha" required>
-            <button type="submit">Entrar</button>
+            <input type="email" id="email" name="email" type="text" placeholder="Email" autocomplete="off" required autofocus>
+            <input type="senha" id="senha" name="password"  type="text" placeholder="Senha" required>
+            <button type="submit" id="login">Entrar</button>
         </form>
     </header>
     <main id="teste">
@@ -35,10 +35,10 @@
                         </select>
                     </label>
                 </div> 
-            </form>
+            
                 <div id="parteMeio">
-                    <div id="label-family">
-                        <label for="" id="label-family">Qual sua família?</label>
+                    <div id="familias">
+                        <label id="label-family">Qual sua família?</label>
                         <div>
                             <input type="radio" name="family" id="familia-1" value="Frontend" checked > Família Frontend
                             <label for="familia-1"></label>
@@ -53,20 +53,25 @@
                         </div>
                     </div>
                     <div id="teste3">                           
-                        <form>
+                    
+                            <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+                            <p>
                             <input type="checkbox" id="conteudo1" name="conteudo1" value="HoFs">
-                            <label for="conteudo1"> HoFs </label><br>
+                            <label for="conteudo1"> HoFs </label>
                             <input type="checkbox" id="conteudo2" name="conteudo2" value="Jest">
-                            <label for="conteudo2"> Jest</label><br>
+                            <label for="conteudo2"> Jest</label>
                             <input type="checkbox" id="conteudo3" name="conteudo3" value="Promises">
                             <label for="conteudo3"> Promises </label>
+                            </p>
+                            <p>
                             <input type="checkbox" id="conteudo4" name="conteudo4" value="React">
                             <label for="conteudo4"> React</label>
                             <input type="checkbox" id="conteudo5" name="conteudo5" value="SQL">
                             <label for="conteudo5"> SQL</label>
                             <input type="checkbox" id="conteudo6" name="conteudo6" value="Python">
                             <label for="conteudo6"> Python </label>
-                        </form>
+                          </p>
+                        
                                       
                     </div>
                 </div>
@@ -97,14 +102,21 @@
             </div>
             <label for="comment" class="textarea"><h3>Deixe seu comentário:</h3>
                 <textarea name="comment" id="comment" cols="50" rows="10" maxlength="500"></textarea required>
-
             </label>
+            
+            <div >
+                <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>
+                <input type="checkbox" name="" id="agreement" required>
+            </div>
 
+            <button type="submit" id="submit-btn" disabled>Enviar</button>
 
         </div>
 
                 <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
             </div>
+       
+        </form>
         </main>
 <footer class="footer">Direitos reservados à Trybewarts©</footer>
 <script src="script.js"></script>
