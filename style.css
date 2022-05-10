@@ -1,7 +1,8 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
@@ -22,6 +23,7 @@
   width: 675px;
   flex-direction: column;
 }
+
 #trybewarts-forms-logo {
   display: flex;
   height: 500px;
@@ -29,17 +31,13 @@
 
 #teste {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-
+  flex-flow: row wrap;
 }
 
 #teste2 {
   display: flex;
   width: 50%;
-  flex-wrap: wrap;
-  flex-direction: column;
-
+  flex-flow: column wrap;
 }
 
 #teste3 {
@@ -55,10 +53,9 @@
   align-content: space-around;
 }
 
-.footer{
+.footer {
   display: flexbox;
   background-color: mediumpurple;
-
 }
 
 #parteMeio {
