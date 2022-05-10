@@ -17,7 +17,7 @@
     height: 500px;
 }
 .footer{
-    display: flexbox;
+    display: flex;
     background-color: mediumpurple;
-
+     
 }
