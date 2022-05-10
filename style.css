@@ -7,3 +7,17 @@
     display: flex;
     justify-content: space-between;
 }
+#evaluation-form {
+    display: flex;
+    width: 675px;
+    flex-direction: column;
+}
+#trybewarts-forms-logo {
+    display: flex;
+    height: 500px;
+}
+.footer{
+    display: flexbox;
+    background-color: mediumpurple;
+
+}
